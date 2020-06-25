@@ -17,7 +17,7 @@ public class CommandMain extends ListenerAdapter {
         if (event.getAuthor().isBot()) return;
 
         for (Command command : commandHandler.getCommands()) {
-            command.execute(event);
+            command.run(event);
         }
 
     }
