@@ -17,11 +17,7 @@ public class CommandMain extends ListenerAdapter {
         if (event.getAuthor().isBot()) return;
 
         for (Command command : commandHandler.getCommands()) {
-<<<<<<< HEAD
             command.run(event);
-=======
-                command.run(event);
->>>>>>> b120af1... Update
         }
 
     }
