@@ -15,7 +15,6 @@ public class API implements YerAPI {
         registerCommandMain();
     }
 
-
     @Override
     public CommandHandler getCommandHandler() {
         return commandHandler;
