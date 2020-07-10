@@ -20,7 +20,7 @@ public class CommandClass extends Command {
         super(command, prefix);
     }
 
-    @Override
+    @APermission(Permission = Permission.UNKNOW, Message = "You don't have permissions")
     public void execute(MessageReceivedEvent event) {
         event.getChannel().sendMessage("This is a command").queue();
     }
